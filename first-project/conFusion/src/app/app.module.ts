@@ -7,13 +7,17 @@ import 'hammerjs';
 import { MatListModule } from '@angular/material/list';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
-
+import { MatGridListModule } from '@angular/material/grid-list';
+import {MatCardModule, MatButtonModule } from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
   ],
   imports: [
+    MatButtonModule,
+    MatCardModule,
+    MatGridListModule,
     MatListModule,
     BrowserModule,
     BrowserAnimationsModule,
